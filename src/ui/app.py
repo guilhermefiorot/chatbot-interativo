@@ -1,8 +1,15 @@
 import streamlit as st
 import asyncio
-from typing import List
+import sys
+import os
+from pathlib import Path
 from langchain_core.messages import HumanMessage, AIMessage
 from dotenv import load_dotenv
+
+# Add the project root directory to Python path
+project_root = str(Path(__file__).parent.parent.parent)
+sys.path.append(project_root)
+
 from src.agents.chatbot import ChatbotAgent
 
 load_dotenv()

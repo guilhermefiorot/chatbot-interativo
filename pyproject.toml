@@ -1,0 +1,43 @@
+[project]
+name = "chatbot-interativo"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "guilherme",email = "guilhermefirme3@gmail.com"},
+    {name = "hanna",email = "hannaleticia91@gmail.com"},
+    {name = "victor",email = "vsiqueiradesouza@gmail.com"},
+    {name = "ruan",email = "ruanrodyy@gmail.com"},
+    {name = "lucas",email = "lucascodeco@gmail.com"}
+
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "streamlit==1.32.2",
+    "langchain==0.3.23",
+    "langchain-core==0.3.51",
+    "langchain-groq==0.3.2",
+    "groq==0.22.0",
+    "langchain-openai==0.3.12",
+    "langgraph==0.3.26",
+    "chromadb==0.4.24",
+    "python-dotenv==1.0.1",
+    "pydantic==2.11.3",
+    "faiss-cpu==1.10.0",
+    "httpx==0.28.1",
+    "langchain-community==0.3.21"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.0.2",
+    "pytest-asyncio==0.23.5"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+package-mode = false
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

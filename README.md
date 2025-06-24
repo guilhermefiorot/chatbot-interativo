@@ -60,6 +60,7 @@ project/
 ### Pré-requisitos
 
 - Python 3.10+
+- Poetry
 - Docker e Docker Compose
 - Chave de API Groq
 
@@ -73,7 +74,7 @@ project/
 
 2. Instale as dependências:
    ```bash
-   pip install -r requirements.txt
+   poetry install
    ```
 
 3. Crie um arquivo `.env` a partir do modelo:
