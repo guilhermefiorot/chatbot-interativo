@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GROQ_API_KEY = ""
+GROQ_API_KEY = "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"
 DEBUG = os.getenv("DEBUG", "False").lower() == "true"
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 VECTOR_DB_PATH = os.getenv("VECTOR_DB_PATH", "./data/vector_store")
